@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testImplementation 'com.anatawa12.auto-tostring:compiler-plugin:1.0.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+    testImplementation 'io.cucumber:cucumber-java:7.2.3'
+    testImplementation 'info.cukes:cucumber-java:1.2.6'
+    testImplementation 'io.cucumber:cucumber-junit:7.2.3'
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.1.1'
+    testImplementation 'io.cucumber:gherkin:22.0.0'
+    testImplementation 'org.junit.platform:junit-platform-commons:1.5.2'
+    testImplementation 'org.apache.poi:poi-ooxml-schemas:4.1.2'
+
+    testImplementation 'org.apache.poi:poi-ooxml:4.1.2'
+    testImplementation 'org.apache.xmlbeans:xmlbeans:3.1.0'
+    testImplementation 'org.apache.poi:poi-ooxml-schemas:4.1.2'
+    testImplementation 'org.apache.poi:poi:3.1.6'
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind:2.9.8'
+
+    testImplementation 'org.apache.tomcat:tomcat-dbcp:7.0.14'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
